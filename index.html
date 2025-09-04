@@ -11,32 +11,40 @@
 
     header {
       display: flex;
-      align-items: center;
+      align-items: center;      /* vertically center logo & text */
+      justify-content: space-between; /* pushes nav to the far right */
       background-color: #e32910;
       color: white;
       padding: 10px 20px;
     }
 
-    header img {
+    .logo-title {
+      display: flex;
+      align-items: center;      /* logo & title side by side */
+    }
+
+    .logo-title img {
       height: 40px;
       margin-right: 15px;
     }
 
-    header h1 {
+    .logo-title h1 {
       font-size: 1.5em;
       margin: 0;
     }
 
+    nav {
+      display: flex;            /* makes nav links line up in one row */
+      gap: 10px;                /* spacing between buttons */
+    }
+
     nav a {
-    text-decoration: none;
-    color: white;
-    background: #f7d511;
-    padding: 2px 20px;
-    margin-left: 10px;
-    border-radius: 2px;
-    transition: background 0.2s;
-    float:left;
-    
+      text-decoration: none;
+      color: black;
+      background: #f7d511;
+      padding: 6px 15px;
+      border-radius: 4px;
+      transition: background 0.2s;
     }
 
     nav a:hover {
@@ -46,26 +54,26 @@
     main {
       padding: 20px;
     }
-    </style>
+  </style>
 </head>
 <body>
   <header>
-    <div>
-      <img src="pingu.png" alt="" style="float:left">
-      <h1 style="float:right">ThermonuclearPenguin's web page</h1>
-    <div>
+    <div class="logo-title">
+      <img src="pingu.png" alt="Logo">
+      <h1>ThermonuclearPenguin's web page</h1>
+    </div>
     <nav>
       <a href="index.html">page01</a>
-      <a href="p2">page02</a>
+      <a href="p2.html">page02</a>
       <a href="p3.html">page03</a>
       <a href="p4.html">page04</a>
     </nav>
   </header>
 
   <main>
-    <h2>main 01 text </h2>
-    <p> main02 text</p>
-    <p>       edit   333       </p>
+    <h2>main 01 text</h2>
+    <p>main02 text</p>
+    <p>edit 206</p>
   </main>
 </body>
 </html>
