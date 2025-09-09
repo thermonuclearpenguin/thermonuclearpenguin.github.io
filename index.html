@@ -11,56 +11,49 @@
   
   
   <style> 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
     header {
-      display: flex;
-      align-items: center;      
-      background-color: #e32910;
-      color: white;
-      padding: 10px 20px;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e32910;
+  color: white;
+  padding: 10px 20px;
+}
 
-    .logo {
-      display: flex;
-      align-items: center;      
-      float: left;
-    }
+    .logo-title {
+  display: flex;
+  align-items: center; 
+}
 
     .logo-title img {
-      height: 40px;
-      margin-right: 15px;
-    }
+  height: 40px;
+  margin-right: 15px;
+}
 
     .logo-title h1 {
-      font-size: 1.5em;
-      margin: 0;
-    }
+  font-size: 1.5em;
+  margin: 0;
+  white-space: nowrap; 
+}
 
     nav {
-      display: flex;   
-      gap: 10px;         
-      
-    }
+  display: flex;
+  gap: 10px;
+}
 
     nav a {
-      text-decoration: none;
-      color: black;
-      background: #f7d511;
-      padding: 6px 15px;
-      border-radius: 4px;
-      transition: background 0.2s;
-    }
+  text-decoration: none;
+  color: black;
+  background: #f7d511;
+  padding: 6px 15px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
 
     nav a:hover {
-      background: #ffed85;
-    }
-    main {
-      padding: 20px;
-    }
+  background: #ffed85;
+}
+
   </style>
 </head>
 
@@ -72,24 +65,23 @@
   
 <body>
   <header>
-    <div class="logo">
-      <a>
-        <img src="pingu.png" alt="Logo" width="50px" height="50px">
-        <h1>ThermonuclearPenguin's web page &nbsp;&nbsp;</h1>
-      </a>
-    </div>
-    <nav>
-      <a href="index.html">page01</a>
-      <a href="p2.html">page02</a>
-      <a href="https://news.rr.nihalnavath.com/posts/thermopingu-c10c7abc">page03</a>
-      <a href="p4.html">page04</a>
-    </nav>
-  </header>
+  <div class="logo-title">
+    <img src="pingu.png" alt="Logo" width="50" height="50">
+    <h1>ThermonuclearPenguin's web page</h1>
+  </div>
+  <nav>
+    <a href="index.html">page01</a>
+    <a href="p2.html">page02</a>
+    <a href="https://news.rr.nihalnavath.com/posts/thermopingu-c10c7abc">page03</a>
+    <a href="p4.html">page04</a>
+  </nav>
+</header>
+
 
   <main>
     <h2>main 01 text</h2>
     <p>main02 text</p>
-    <p>edit 12fc93c6f800</p>
+    <p>edit 42ff93c6f800</p>
   </main>
 </body>
 </html>
